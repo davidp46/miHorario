@@ -1,13 +1,14 @@
 <?php
     namespace Controller;
-    require_once 'BaseController.php';
+    require_once 'loadView.php';
+    use function MiHorario\render;
 
-    class ViewController extends BaseController {
+    class ViewController {
         static function inicio() {
-            require_once 'views/inicio.php';
+            render('Inicio', 'inicio.php');
         }
 
         static function acceso() {
-            require_once 'views/acceso.php';
+            render('Acceso', 'acceso.php');
         }
     }
