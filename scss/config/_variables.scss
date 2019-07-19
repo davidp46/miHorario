@@ -1,0 +1,22 @@
+:root {
+  //colors
+  --dark-color: #1E2036;
+  --white-color: #ffffff;
+  --light-blue-color: #00E5FF;
+  --dark-blue-transparent-color: rgba(51, 122, 240, .16);
+  --dark-blue-color: #337AF0;
+  --divider-color: #393C5D;
+
+  --padding-global: 4rem;
+  --padding-navbar: 4rem;
+  --property-menu: row;
+  --ml-item-nav: 2rem; // margin left items menu
+  --mt-introduction: 5rem;
+  @media screen and (max-width: 480px) {
+    --padding-global: 1rem;
+    --padding-navbar: 1rem;
+    --property-menu: column;
+    --ml-item-nav: 0rem;
+    --mt-introduction: 4rem;
+  }
+}

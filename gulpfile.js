@@ -3,8 +3,12 @@ const sass = require('gulp-sass');
 
 function estilo() {
   return gulp.src('./scss/**/*.scss')
-    .pipe(sass())
-    .pipe(gulp.dest('./public/css'))
+    .pipe(sass({outputStyle: 'compressed'}))
+    .pipe(gulp.dest('./resources/css'))
 }
 
-exports.estilo = estilo;
+function watch() {
+  gulp.watch('./scss/**/*.scss', estilo);
+}
+
+exports.watch = watch;

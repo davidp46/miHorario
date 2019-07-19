@@ -1,0 +1,19 @@
+.alert {
+  position: relative;
+  background-color: var(--dark-blue-transparent-color);
+  border: 1px solid var(--dark-blue-color);
+  color: var(--white-color);
+  border-radius: 4px;
+  padding: .5rem 1rem;
+  font-size: .75rem;
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .i_close {
+    color: var(--dark-blue-color);
+    font-size: 1rem;
+    cursor: pointer;
+  }
+}
