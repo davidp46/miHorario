@@ -98,3 +98,43 @@
     font-size: .75rem;
   }
 }
+
+.container_form {
+  width: 240px;
+  margin: 0 auto;
+  h3 {
+    text-align: center;
+    color: var(--white-color);
+    text-transform: uppercase;
+  }
+}
+
+.grid_eventos {
+  width: 100%;
+  height: calc(100vh - 70px);
+  display: grid;
+  grid-template-columns: 320px calc(100% - 320px);
+  grid-template-rows: 50px 1fr 1fr;
+  grid-template-areas: "bandeja titulo"
+                       "bandeja descripcion"
+                       "bandeja recordatorios";
+  .container_eventos {
+    grid-area: bandeja;
+    background: red;
+  }
+
+  .container_titulo {
+    grid-area: titulo;
+    background: purple;
+  }
+
+  .container_desc {
+    grid-area: descripcion;
+    background: green;
+  }
+
+  .container_record {
+    grid-area: recordatorios;
+    background: orange;
+  }
+}

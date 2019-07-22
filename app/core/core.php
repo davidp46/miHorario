@@ -10,7 +10,9 @@
     if(!empty($peticion)) {
         $routes = array(
             'inicio',
-            'acceso'
+            'acceso',
+            'registro',
+            'eventos'
         );
         foreach ($routes as $view) {
             if($peticion == $view) {
