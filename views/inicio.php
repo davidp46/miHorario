@@ -12,13 +12,13 @@
             <div class="texto">
                 <h2>¿Qué es Mi Horario?</h2>
                 <p>
-                    Praesent scelerisque lectus sit amet varius 
-                    tristique. Duis ultrices dui nec pretium 
-                    fermentum. Praesent ut sapien a magna 
-                    imperdiet vestibulum. Pellentesque nibh ligula, 
-                    consequat id risus sit amet, pellentesque ultrices 
-                    dui. Sed tempus augue accumsan blandit 
-                    tempus. 
+                    Praesent scelerisque lectus sit amet varius
+                    tristique. Duis ultrices dui nec pretium
+                    fermentum. Praesent ut sapien a magna
+                    imperdiet vestibulum. Pellentesque nibh ligula,
+                    consequat id risus sit amet, pellentesque ultrices
+                    dui. Sed tempus augue accumsan blandit
+                    tempus.
                 </p>
             </div>
         </div>

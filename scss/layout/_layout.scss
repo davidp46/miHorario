@@ -32,7 +32,7 @@
       grid-gap: 1rem;
       .container-texto {
         justify-content: center;
-      }                       
+      }
     }
   }
   @media screen and (min-width: 1020px){
@@ -120,21 +120,96 @@
                        "bandeja recordatorios";
   .container_eventos {
     grid-area: bandeja;
-    background: red;
+    padding: 0 1rem;
+    border-right: 1px solid var(--divider-color);
+    .create_modulo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--white-color);
+      button {
+        border: 0;
+        outline: 0;
+        padding: 0;
+        background: transparent;
+        font-size: 1.2rem;
+        color: var(--dark-blue-color);
+        cursor: pointer;
+        height: 20px;
+      }
+    }
   }
 
   .container_titulo {
     grid-area: titulo;
-    background: purple;
+    color: var(--white-color);
+    font-size: 1.1rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    p {
+      margin: 0;
+    }
   }
 
   .container_desc {
     grid-area: descripcion;
-    background: green;
+    border-bottom: 1px solid var(--divider-color);
+    color: var(--white-color);
+    padding: 1rem;
+    // background: green;
   }
 
   .container_record {
     grid-area: recordatorios;
-    background: orange;
+    padding: 1rem;
+    h4 {
+      margin: 0;
+      color: var(--white-color);
+    }
+    .table_record {
+      max-height: 150px;
+      overflow-y: auto;
+      &::-webkit-scrollbar {
+        width: .5rem;
+        margin-left: .5rem;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: var(--divider-color);
+        border-radius: 20px;
+      }
+      .item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: var(--white-color);
+        padding-right: .5rem;
+        p {
+          font-size: .75rem;
+        }
+        i {
+          cursor: pointer;
+          margin-left: 1rem;
+          color: var(--divider-color);
+          font-size: 1.3rem;
+        }
+        border-bottom: 1px solid var(--divider-color);
+      }
+    }
+  }
+  @media screen and (max-width: 840px) {
+    grid-template-columns: 100% 100%;
+    overflow-x: auto;
+    &::-webkit-scrollbar {
+      height: .5rem;
+      margin-left: .5rem;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--divider-color);
+      border-radius: 20px;
+    }
   }
 }
